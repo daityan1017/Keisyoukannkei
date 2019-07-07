@@ -3,7 +3,7 @@ package com.example.keisyoukannkei;
 public class AddNumber {
     protected int number ;
 
-    public void addNumber(int i){
+    public void add(int i){
         number += i;
     }
 
