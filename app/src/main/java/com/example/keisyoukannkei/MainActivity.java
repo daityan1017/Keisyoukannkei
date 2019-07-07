@@ -13,14 +13,17 @@ public class MainActivity extends AppCompatActivity {
 
         TextView text1 = findViewById(R.id.text1) , text2 = findViewById(R.id.text2);
 
-        AddNumberSub addNumberSub = new AddNumberSub();
+        SubtractNumber subtractNumber = new SubtractNumber();
 
-        addNumberSub.add(30);
-        addNumberSub.recorder();
-        addNumberSub.add(100);
+        subtractNumber.add(30);
+        subtractNumber.recorder();
+        subtractNumber.subtract(20);
 
-        text1.setText("親クラス" + addNumberSub.getNumber());
-        text2.setText("サブクラス" + addNumberSub.getRecord());
+        text1.setText("おじいちゃんクラス" + String.valueOf(subtractNumber.getNumber()));
+        text2.setText("親クラス" + String.valueOf(subtractNumber.getRecord()));
+
+
+
 
 
     }
